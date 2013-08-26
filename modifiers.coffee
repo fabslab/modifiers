@@ -8,11 +8,15 @@ addListener = (el, event, handler) ->
   return
 
 modifierNames =
+  '⇧': 16
   shift: 16
+  '⌃': 17
   ctrl: 17
   control: 17
+  '⌥': 18
   alt: 18
   option: 18
+  '⌘': 91
   command: 91
 
 pressedModifiers = {}
