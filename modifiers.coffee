@@ -1,22 +1,8 @@
-# cross-browser events
-addListener = (el, event, handler) ->
-  if el.addEventListener?
-    el.addEventListener event, handler, false
-  else if el.attachEvent?
-    el.attachEvent 'on' + event, ->
-      handler(window.event)
-  return
-
 modifierNames =
-  '⇧': 16
   shift: 16
-  '⌃': 17
-  ctrl: 17
   control: 17
-  '⌥': 18
   alt: 18
   option: 18
-  '⌘': 91
   command: 91
 
 pressedModifiers = {}
@@ -36,10 +22,9 @@ updateModifier = (e) ->
 # initialise
 resetModifiers()
 
-addListener document, 'keydown', updateModifier
-addListener document, 'keyup', updateModifier
+document.addEventListener 'keydown', updateModifier
 # reset on window focus to avoid certain errors
-addListener window, 'focus', resetModifiers
+window.addEventListener 'focus', resetModifiers
 
 # export globally
 this.modifiers = pressedModifiers
