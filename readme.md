@@ -21,3 +21,6 @@ if (modifiers.shift) {
 
 The code uses addEventListener so if you sadly need to support IE8 you'll want to change the code to use
 something like what's described [here](http://msdn.microsoft.com/en-us/magazine/ff728624.aspx).
+
+
+MIT Licensed.
