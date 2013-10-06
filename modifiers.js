@@ -37,4 +37,4 @@
 
   this.modifiers = pressedModifiers;
 
-}(this));
+}).call(this);
