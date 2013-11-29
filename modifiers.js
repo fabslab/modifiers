@@ -32,6 +32,7 @@
   resetModifiers();
 
   document.addEventListener('keydown', updateModifier);
+  document.addEventListener('keyup', updateModifier);
 
   window.addEventListener('focus', resetModifiers);
 
