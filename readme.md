@@ -5,8 +5,19 @@ This is a small subset of the functionality in that library. See for yourself ho
 
 At any point in time you can query the `modifiers` object to see if a modifier key is held down.
 
-Supported keys are:
+Default supported keys are:
 `shift`, `alt`, `option` (same as `alt`), `control`, `command`
+
+```javascript
+if (modifiers.command || modifiers.control) {
+  // do something special
+}
+
+// ..inside your click handler
+if (modifiers.shift) {
+  ...
+}
+```
 
 You can also add your own to the defaults:
 ```javascript
@@ -20,17 +31,6 @@ modifiers.add({{
   s: 83,
   d: 68
 });
-```
-
-```javascript
-if (modifiers.command || modifiers.control) {
-  // do something special
-}
-
-// ..inside your click handler
-if (modifiers.shift) {
-  ...
-}
 ```
 
 ### Building
