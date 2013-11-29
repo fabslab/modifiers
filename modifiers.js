@@ -38,4 +38,13 @@
 
   this.modifiers = pressedModifiers;
 
+  // allow adding of additional keyCodes
+  this.modifiers.add = function addKeyMapping(map) {
+    for (var key in map) {
+      modifiers[key] = map[key];
+      pressedModifiers[key] = false;
+    }
+  }
+
+
 }).call(this);
