@@ -1,0 +1,26 @@
+{
+  "name": "modifiers",
+  "main": "modifiers.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fsbdev/modifiers",
+  "authors": [
+    "Fabien Brooke <fabienbrooke@gmail.com>"
+  ],
+  "description": "Query modifier keys at any time.",
+  "keywords": [
+    "modifiers",
+    "keys",
+    "modifier",
+    "shift",
+    "control",
+    "command"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
