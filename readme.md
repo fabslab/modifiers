@@ -43,4 +43,6 @@ The code uses addEventListener so if you sadly need to support IE8 you'll want t
 something like what's described [here](http://msdn.microsoft.com/en-us/magazine/ff728624.aspx).
 
 
-MIT Licensed.
+### License
+
+MIT

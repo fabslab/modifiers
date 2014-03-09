@@ -1,0 +1,28 @@
+{
+  "name": "modifiers",
+  "version": "1.0.0",
+  "description": "Query modifier keys at any time.",
+  "main": "modifiers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fsbdev/modifiers.git"
+  },
+  "keywords": [
+    "modifiers",
+    "keys",
+    "modifier",
+    "keys",
+    "shift",
+    "control",
+    "command"
+  ],
+  "author": "Fabien Brooke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fsbdev/modifiers/issues"
+  },
+  "homepage": "https://github.com/fsbdev/modifiers"
+}
