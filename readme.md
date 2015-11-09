@@ -37,7 +37,7 @@ modifiers.add({
 
 To create the minified and compressed version with source mapping, run:
 
-`uglifyjs modifiers.js --source-map modifiers.min.map --screw-ie8 -c -m -o modifiers.min.js`
+`npm run minify`
 
 The code uses addEventListener so if you need to support IE8 you'll want to change the code to use
 something like what's described [here](http://msdn.microsoft.com/en-us/magazine/ff728624.aspx).
